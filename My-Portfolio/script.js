@@ -159,14 +159,14 @@ const projectWindow = document.querySelector('.project-preview');
 
 function loadProject() {
   projectInfo.forEach((info) => {
-    projectWindow.innerHTML += `
+    projectWindow.innerHTML += 
       <div class="projectPreview" data-target="${info.id}">
         <div class="projectHeader">
           <div class="head">
             <h2>${info.name}</h2>
             <i class="fa fa-close" style="font-size:24px; color:#67798e"></i>
           </div>  
-          <ul class="technologiesPreview">
+          <ul class="technologiesPreview'>
             ${getTechList(info.modalTechs)}
           </ul>
         </div>
@@ -175,7 +175,7 @@ function loadProject() {
           <div class="projectContent">
             <div class="projectDescription">
               <p>
-                ${info.description}
+                ${info.description
               </p>
             </div>
             <div class="projectButtons">
@@ -252,5 +252,5 @@ email.addEventListener('input', () => {
 });
 
 form.addEventListener('submit', () => {
-  validateEmail();
+  validateEmail([[]);
 });
